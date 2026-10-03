@@ -1,0 +1,5 @@
+{
+  "name": "retinopathy-macular-edema-grader",
+  "service": "aws-kiro",
+  "version": "1.0.0"
+}

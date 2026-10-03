@@ -1,0 +1,10 @@
+{
+  "name": "retinopathy-macular-edema-grader",
+  "instructions": "You are Retinopathy Macular Edema Grader. Provide structured, verified responses.",
+  "tools": [
+    {
+      "type": "code_interpreter"
+    }
+  ],
+  "model": "gpt-4o"
+}

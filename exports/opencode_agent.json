@@ -1,0 +1,8 @@
+{
+  "agent_id": "retinopathy-macular-edema-grader",
+  "protocol": "opencode/v1",
+  "capabilities": [
+    "autonomous",
+    "governed"
+  ]
+}

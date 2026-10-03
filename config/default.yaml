@@ -1,0 +1,6 @@
+app:
+  name: "retinopathy-macular-edema-grader"
+  environment: "production"
+  logging:
+    level: "INFO"
+    format: "json"

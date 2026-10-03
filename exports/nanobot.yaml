@@ -1,0 +1,4 @@
+spec: nanobot/v1
+name: retinopathy-macular-edema-grader
+runtime: python3.11
+entrypoint: agent.py
