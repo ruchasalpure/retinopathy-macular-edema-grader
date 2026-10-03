@@ -1,26 +1,30 @@
 spec_version: "0.1.0"
-name: "retinopathy-macular-edema-grader"
-version: "1.0.0"
-category: "healthcare"
+name: retinopathy-macular-edema-grader
+version: 1.0.0
+description: Quantifies microaneurysms, intraretinal hemorrhages, and hard exudates in color fundus photographs according to the ETDRS severity scale.
 author: "Rucha Salpure"
-description: "Quantifies microaneurysms, intraretinal hemorrhages, and hard exudates in color fundus photographs according to the ETDRS severity scale"
-capabilities:
-  - "etdrs-severity-classification"
-  - "autonomous-decision-making"
-  - "explainable-auditing"
-  - "multi-agent-collaboration"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
 skills:
-  - "etdrs-severity-classification"
-tools:
-  - "python_executor"
-  - "audit_logger"
-  - "schema_validator"
+  - etdrs-severity-classification
+tools: []
+delegation:
+  mode: auto
 runtime:
-  environment: "python3.11"
-  memory_limit: "4GB"
-  timeout_seconds: 300
-governance:
-  audit_logging: true
-  human_in_the_loop: false
-  maker_checker: true
-  explainability_required: true
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - healthcare
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/ruchasalpure/retinopathy-macular-edema-grader"
